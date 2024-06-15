@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappy Bird Windows Game Application", "Flappy Bird Windows Game Application.csproj", "{B47EB93D-9211-4374-BE9A-D0DD72CD6B84}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_FlappyBird", "Setup_FlappyBird\Setup_FlappyBird.vdproj", "{6C76C4B1-7D9B-4580-A7E8-D1D488F94D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B47EB93D-9211-4374-BE9A-D0DD72CD6B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B47EB93D-9211-4374-BE9A-D0DD72CD6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B47EB93D-9211-4374-BE9A-D0DD72CD6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B47EB93D-9211-4374-BE9A-D0DD72CD6B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C76C4B1-7D9B-4580-A7E8-D1D488F94D0A}.Debug|Any CPU.ActiveCfg = Debug
+		{6C76C4B1-7D9B-4580-A7E8-D1D488F94D0A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21175C51-BDDB-4175-9B4A-04529E362455}
+	EndGlobalSection
+EndGlobal

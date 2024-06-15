@@ -1,0 +1,41 @@
+ 
+        public SqlConnection get_Connection()
+        {
+            string source = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\Windows_Application\\Attendence Management System\\PAL\\Forms\\AMSDatabase.mdf\";Integrated Security=True";
+            SqlConnection con = new SqlConnection(source);
+            con.Open();
+            return con;
+        }
+        public void DelInsUp(string qry,SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand(qry, con);
+            cmd.ExecuteNonQuery();
+        }
+       
+       
+        public string fillstr(string qry,SqlConnection con)
+        {
+            string txt = " ";
+            SqlDataAdapter da = new SqlDataAdapter(qry, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            int Len = ds.Tables[0].Rows.Count;
+            if(Len>0)
+            {
+                txt = ds.Tables[0].Rows[0][0].ToString();
+
+
+            }
+            return txt;
+
+
+        }
+        public void fillcmb(ComboBox cb, string str, string field_name, SqlConnection con)
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(str, con);
+            da.Fill(ds);
+            cb.DataSource = ds.Tables[0];
+            cb.DisplayMember = field_name;
+        }
+       
